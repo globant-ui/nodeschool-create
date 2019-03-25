@@ -41,7 +41,7 @@ const workshopsList = {
     package: 'tower-of-babel'
   },
   scopechainsclosures: {
-    name: 'scope-chains-closures',
+    name: 'Scope, Chains & Closures',
     package: '@workshoppers/scope-chains-closures'
   }
 }
