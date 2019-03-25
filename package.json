@@ -1,0 +1,29 @@
+{
+  "name": "@globant/create-nodeschool",
+  "version": "1.0.0",
+  "description": "CLI app for install all nodeschool workshops choose by Globant",
+  "main": "index.js",
+  "bin": "./bin/index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globant-ui/nodeschool-create.git"
+  },
+  "author": "Gerson Niño <gerson.nino@globant.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/globant-ui/nodeschool-create/issues"
+  },
+  "homepage": "https://github.com/globant-ui/nodeschool-create#readme",
+  "dependencies": {
+    "execa": "^1.0.0",
+    "listr": "^0.14.3"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
