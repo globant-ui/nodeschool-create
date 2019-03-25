@@ -82,6 +82,10 @@ const tasks = new Listr([
 })
 
 tasks.run()
+  .then(() => {
+    console.log('\x1b[36m%s\x1b[0m', '\nAll workshops has been installed and their directories for your exercises has been created.')
+    console.log('\x1b[36m%s\x1b[0m', 'Please execute `globant-nodeschool start` to choose a workshop and get redirected to its Readme file.')
+  })
   .catch(err => {
     console.error(err)
   })
