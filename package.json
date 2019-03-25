@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "CLI app for install all nodeschool workshops choose by Globant",
   "main": "index.js",
-  "bin": "./bin/index.js",
+  "bin": {
+    "create-nodeschool": "./bin/index.js"
+  },
   "scripts": {
     "test": "npm run lint",
     "lint": "standard",
@@ -25,5 +27,11 @@
   },
   "devDependencies": {
     "standard": "^12.0.1"
-  }
+  },
+  "keywords": [
+    "globant",
+    "cli",
+    "node.js",
+    "nodeschool"
+  ]
 }
