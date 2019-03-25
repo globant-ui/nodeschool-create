@@ -23,7 +23,8 @@
   "homepage": "https://github.com/globant-ui/nodeschool-create#readme",
   "dependencies": {
     "execa": "^1.0.0",
-    "listr": "^0.14.3"
+    "listr": "^0.14.3",
+    "make-dir": "^2.1.0"
   },
   "devDependencies": {
     "standard": "^12.0.1"

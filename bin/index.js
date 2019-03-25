@@ -2,6 +2,7 @@
 
 const Listr = require('listr')
 const { workshopsList, install: workshopInstall } = require('../data/workshops')
+const makeDir = require('make-dir')
 
 const tasks = new Listr([
   {
@@ -54,6 +55,22 @@ const tasks = new Listr([
         }
       ])
     }
+  },
+  {
+    title: 'Creating directories',
+    task: async () => Promise.all([
+      makeDir('javascripting'),
+      makeDir('learnyounode'),
+      makeDir('howtonpm'),
+      makeDir('elementaryelectron'),
+      makeDir('functionaljavascript'),
+      makeDir('expressworks'),
+      makeDir('promiseitwonthurt'),
+      makeDir('asyncyou'),
+      makeDir('planetproto'),
+      makeDir('towerofbabel'),
+      makeDir('scopechainsclosures')
+    ])
   }
 ], {
   collapse: false
