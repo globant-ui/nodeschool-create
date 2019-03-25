@@ -3,6 +3,7 @@
 const Listr = require('listr')
 const { workshopsList, install: workshopInstall } = require('../data/workshops')
 const makeDir = require('make-dir')
+const execa = require('execa')
 
 const tasks = new Listr([
   {
@@ -71,6 +72,10 @@ const tasks = new Listr([
       makeDir('towerofbabel'),
       makeDir('scopechainsclosures')
     ])
+  },
+  {
+    title: 'Installing helper CLI',
+    task: () => execa('npm', ['install', '-g', '@globant/nodeschool-helper'])
   }
 ], {
   collapse: false
