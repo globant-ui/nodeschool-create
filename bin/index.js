@@ -55,7 +55,9 @@ const tasks = new Listr([
       ])
     }
   }
-])
+], {
+  collapse: false
+})
 
 tasks.run()
   .catch(err => {
