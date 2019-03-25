@@ -1,6 +1,6 @@
 {
   "name": "@globant/create-nodeschool",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "CLI app for install all nodeschool workshops choose by Globant",
   "main": "index.js",
   "bin": {
